@@ -16,6 +16,14 @@ The
 goes into more detail on the various customization options for Elements (e.g.
 styles, fonts).
 
+### Interested in beta-testing a new React library?
+
+We're currently testing
+[React Stripe.js](https://github.com/stripe/react-stripe-js), a new library for
+integrating Stripe Elements with React. Email
+[stripejs-feedback@stripe.com](mailto:stripejs-feedback@stripe.com) with your
+Stripe account ID for access to beta docs.
+
 <!-- prettier-ignore-start -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -195,12 +203,12 @@ class CheckoutForm extends React.Component {
 
     // Use Elements to get a reference to the Card Element mounted somewhere
     // in your <Elements> tree. Elements will know how to find your Card Element
-    // becase only one is allowed.
+    // because only one is allowed.
     // See our getElement documentation for more:
     // https://stripe.com/docs/stripe-js/reference#elements-get-element
     const cardElement = this.props.elements.getElement('card');
 
-    // From here we cal call createPaymentMethod to create a PaymentMethod
+    // From here we can call createPaymentMethod to create a PaymentMethod
     // See our createPaymentMethod documentation for more:
     // https://stripe.com/docs/stripe-js/reference#stripe-create-payment-method
     this.props.stripe
